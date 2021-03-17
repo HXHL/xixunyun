@@ -18,6 +18,7 @@ data = {
   "latitude":latitude,
   "address_name":os.environ["ADDRESS_NAME"] 
 }
+
 headers = {'Content-Type': 'application/json'}
 
 response = requests.post(url='http://xxy.kuileii.cn/release/xixunyun', headers=headers, data=json.dumps(data))
